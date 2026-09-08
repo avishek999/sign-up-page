@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <header>
+          <h1>Signup</h1>
+        </header>
+        <main>
+          <form action="/login" method="post">
+            <input
+              class="input_tag"
+              name="name"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              class="input_tag"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="input_tag"
+              name="password"
+              type="password"
+              placeholder="password"
+              required
+            />
+            <input
+              class="input_tag"
+              name="confirm_password"
+              type="password"
+              placeholder="Confirm Password "
+              required
+            />
+            <input
+              class="input_tag"
+              name="ob"
+              type="date"
+              placeholder="MM/DD/YYY"
+              required
+            />
+
+            <div>
+              <input class="radio_tag" id="student" name="role" type="radio" required />
+              <label for="student">Student</label>
+
+              <input class="radio_tag" id="employee" name="role" type="radio" required />
+              <label for="employee">Employee</label>
+            </div>
+
+            <input class="checkbox_tag" id="agree" name="agree" type="checkbox" required />
+            <label for="agree">I agree to all Terms and Conditions</label>
+            <button class="button" type="submit">Signup</button>
+          </form>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>
